@@ -12,7 +12,7 @@ def chatbot_response(paragraph, question):
     response = openai.Completion.create(
         engine="curie:ft-techversant-2023-02-01-08-31-14",
         prompt='Given the following paragraph: "' + paragraph + '", what is the answer to the following question: "' + question + '"',
-        max_tokens=100,
+        max_tokens=30,
         n=1,
         stop=[" END"],
         temperature=0.5,
