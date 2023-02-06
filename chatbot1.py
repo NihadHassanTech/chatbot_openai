@@ -3,6 +3,9 @@ import nltk, openai
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 
+# Load the punkt tokenizer
+sent_tokenize = nltk.tokenize.sent_tokenize
+
 # Set the API key for accessing OpenAI's GPT-3 API
 openai.api_key = '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'
 
