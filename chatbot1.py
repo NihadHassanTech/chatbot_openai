@@ -26,7 +26,7 @@ def chatbot_response(paragraph, question):
         stop=[" END"],
         temperature=0.5,
         best_of=1,
-    ).choices[0].text
+    ).choices[0].tex
 
     # Split the response into sentences and return the first sentence.
     sentences = sent_tokenize(response)
